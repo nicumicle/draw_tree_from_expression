@@ -31,7 +31,7 @@ if (isset($_REQUEST['symbol']) && isset($_REQUEST['nr_args']))
 		if ($val != "" && $nr_args_arr[$key] != "")
 			$expression_args[$val] = $nr_args_arr[$key];
 	}
-//	var_dump($expression_args);
+
 }
 
 $Tree2 = new Expression($expression, $expression_args);
@@ -79,8 +79,8 @@ $errors_array = $Tree2->get_errors();
 							}
 							?>
 						</div>
-					</div><!--endof panel body-->
-				</div><!--endof panel-->
+					</div><!--end of panel body-->
+				</div><!--end of panel-->
 
 				<!--FUNCTION PARAMETERS -->
 				<div class = 'panel  panel-default col-md-6'>
@@ -113,8 +113,8 @@ $errors_array = $Tree2->get_errors();
 							<input type="button" class="btn btn-success" value="+ Line" id="add_new_line" onclick="add_line_click()"/>
 						</div>
 
-					</div><!--endof panel body-->
-				</div><!--endof panel-->
+					</div><!--end of panel body-->
+				</div><!--end of panel-->
 
 				<?php
 				if ($show_find_position)
@@ -140,7 +140,7 @@ $errors_array = $Tree2->get_errors();
 							</div>
 						</div>
 					</div>
-					<!--endof find position -->
+					<!--end of find position -->
 					<?php
 				}
 				?>
@@ -174,7 +174,6 @@ $errors_array = $Tree2->get_errors();
 					<div class="panel-body">
 						<label class='title'>Tree at position (<span class='highlight'><?= $position_x . "," . $position_y; ?></span>)</label>
 						<?php
-						//Incerc sa scot doar arborele de la poz (x,y)
 						echo $Tree2->get_tree_from_position($position_x, $position_y);
 						?>
 					</div>

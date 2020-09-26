@@ -1,12 +1,6 @@
 <?php
 
-/**
- * Description of Object
- *
- * @author mNick
- */
-
-class Object{
+class SimpleObject{
 	var $id;
 	var $value;
 	var $parent;
